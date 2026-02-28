@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Information-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Complete HTML Learning File">
+        <meta name="keywords" content="HTML, Learn HTML, Tags">
+        <meta name="author" content="Ashwitha Bathini">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complete HTML Guide</title>
+        <link rel="icon" href="https://via.placeholder.com/32">
+        <!--  Internal CSS  -->
+          <style>
+            body{
+                font-family:Arial;
+                margin:20px;
+            }
+            header,footer{
+                background: #f2f2f2;
+                padding: 10px;
+            }
+            section{
+                margin-bottom: 20px;
+            }
+            table,th,td{
+                border:1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+          </style>
+    </head>
+    <body>
+        <!--Header Section-->
+        <header>
+            <h1>Complete HTML Guide</h1>
+            <nav>
+                <a href="#text">Text</a>|
+                <a href="#lists">Links</a>|
+                <a href="#forms">Tables</a>|
+                <a href="#media">Media</a>
+            </nav>
+        </header>
+        <!--Main Section-->
+        <main>
+            <section id="text">
+                <h2>Text Formatting</h2>
+                <p>This is a <strong>strong</strong> text.</p>
+                <p>This is a <b>bold</b> text.</p>
+                <p>This is a <em>emphasis</em> text.</p>
+                <p>This is a <mark>highlighted</mark> text.</p>
+                <p>This is an <i>italic</i> text.</p>
+                <p>This is a <small>small</small> text.</p>
+                <p>This is an <u>underlined</u> text.</p>
+                <p>H<sub>2</sub>O</p>
+                <p>E=mc<sup>2</sup></p>
+                <p>This is a <del>deleted</del> text.</p>
+                <p>This is an <ins>inserted</ins> text.</p>
+                <p><abbr title="Hypertext Markup Language">HTML</abbr></p>
+                <p><cite>Complete HTML Guide</cite></p>
+                <blockquote>Some quoted text goes here.</blockquote>
+                <q>Inline quote text</q>
+                <pre>This is preformatted text.Spaces and Line breaks are preserved.</pre>
+                <code>console.log("Hello World");</code>
+                <hr>                
+            </section>
+            <!--Lists-->
+            <section id="lists">
+                <h2>Lists</h2>
+                <h3>Ordered List</h3>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+                <h3>Unordered List</h3>
+                <ul>
+                    <li>Frontend</li>
+                    <li>Backend</li>
+                    <li>Database</li>
+                </ul>
+                <h3>Description List</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Hypertext Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                    <dt>JS</dt>
+                    <dd>JavaScript</dd>
+                    </dl>
+            </section>
+            <!--Tables-->
+            <section>
+                <h2>Tables</h2>
+                <table>
+                    <caption>Student Information</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ashwitha</td>
+                            <td>HTML</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>Akshitha</td>
+                            <td>CSS</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Nani</td>
+                            <td>JavaScript</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>Abhiram</td>
+                            <td>Python</td>
+                            <td>92</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Average Marks</td>
+                            <td>90.5</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <!--Forms-->
+            <section id="forms">
+                <h2>Forms</h2>
+                <form action="#" method="post">
+                    <label>Name:</label>
+                    <input type="text" name="name"><br><br>
+                    <label>Email:</label>
+                    <input type="email" name="email"><br><br>
+                    <label>Password:</label>
+                    <input type="password" name="password"><br><br>
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female<br><br>
+                    <label>Skills:</label>
+                    <input type="checkbox">HTML
+                    <input type="checkbox">CSS<br><br>
+                    <label>Birthday:</label>
+                    <input type="date"><br><br>
+                    <label>Upload File:</label>
+                    <input type="file"><br><br>
+                    <label>Choose a color:</label>
+                    <input type="color"><br><br>
+                    <label>Range:</label>
+                    <input type="range" min="0" max="100"><br><br>
+                    <label>Comments:</label>
+                    <textarea rows="4" cols="50"></textarea><br><br>
+                    <label>Country:</label>
+                    <select>
+                        <option>India</option>
+                        <option>USA</option>
+                    </select><br><br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+            <!--Media Elements-->
+            <section id="media">
+                <h2>Media Elements</h2>
+                <h3>Image</h3>
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image"><br><br>
+                <h3>Video</h3>
+                <video width="320" height="240" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><br><br>
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <iframe src="https://www.example.com" width="300" height="200"></iframe>
+                </section>
+                <!--Semantic Tags-->
+                <section>
+                    <h2>Semantic Elements</h2>
+                    <article>
+                        <h3>Article Title</h3>
+                        <p>This is an article about semantic HTML elements.</p>
+                    </article>
+                    <aside>
+                        <p>This is an aside element that provides supplementary information.</p>
+                    </aside>
+                    <details>
+                        <summary>More Information</summary>
+                        <p>Hidden content shown here.</p>
+                    </details>
+                    <figure>
+                        <img src="https://via.placeholder.com/100" alt="Figure Image">
+                        <figcaption>Figure 1: Placeholder Image</figcaption>
+                    </figure>
+                    <time datetime="2024-06-01T12:00">June 1, 2024</time>
+                </section>
+                <!--Progress & Meter Elements-->
+                <section>
+                    <h2>Progress & Meter</h2>
+                    <progress value="70" max="100">70%</progress><br><br>
+                    <meter value="65" min="0" max="100">65%</meter>
+                </section>
+                </main>
+                <!--Footer Section-->
+                <footer>
+                    <p>&copy; 2024 Ashwitha Bathini. All rights reserved.</p>
+                </footer>
+    </body>
+</html>
